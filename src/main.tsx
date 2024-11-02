@@ -8,7 +8,7 @@ import { AuthProvider } from "./context/authContext.tsx";
 import axios from "axios";
 import { Toaster } from "react-hot-toast";
 
-axios.defaults.baseURL = "http://localhost:5000/api/v1"; // to not write whole api
+axios.defaults.baseURL = "https://promptly-backend.onrender.com/api/v1"; // to not write whole api
 axios.defaults.withCredentials = true; // for cookies
 
 const theme = createTheme({
