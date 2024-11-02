@@ -1,0 +1,49 @@
+@import url("https://fonts.cdnfonts.com/css/helvetica-neue-5");
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #40414f;
+  color: white;
+  font-family: "helvetica-neue-5", Arial, Helvetica, sans-serif;
+}
+
+.nav-link {
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0 10px;
+  padding: 8px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.MuiOutlinedInput-input-root.Mui-focused,
+.MuiOutlinedInput-notchedOutline {
+  border-color: white !important;
+}
+
+.user-chat {
+  background-color: #f0f0f0 !important;
+  color: black !important; /* Black for text */
+}
+
+.assistant-chat {
+  background-color: black !important;
+  color: #fff !important; /* White for text */
+}
+
+.zoom-animation {
+  display: inline-block;
+  animation: zoom 4s infinite ease-in-out;
+}
+
+@keyframes zoom {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.01); /* Adjust for desired zoom level */
+  }
+}
