@@ -1,11 +1,14 @@
 import axios from "axios";
 
 export const loginUser = async (email: string, password: string) => {
+  console.log({ email, password });
   const res = await axios.post("/user/login", { email, password });
+  console.log({ res });
   if (res.status !== 200) {
     throw new Error("Unable to Login");
   }
   const data = await res.data;
+  console.log("data", { data });
   return data;
 };
 
